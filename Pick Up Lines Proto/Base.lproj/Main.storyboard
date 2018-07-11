@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KW3-mA-B4j">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pick Up Lines-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pick_Up_Lines" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w4b-ge-2Ba">
+                                <rect key="frame" x="0.0" y="140" width="375" height="638"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickUpLineCell" rowHeight="64" id="ZSb-rN-xPh" customClass="PickUpLineCell" customModule="Pick_Up_Lines" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZSb-rN-xPh" id="dWJ-Xv-UL1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats yo name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkv-iK-1Z2">
+                                                    <rect key="frame" x="15" y="11" width="277" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="PG5-lq-wOx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="k@k.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezw-vk-2SD">
+                                                    <rect key="frame" x="15" y="35" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="sIJ-co-Dfz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi1-40-XIY">
+                                                    <rect key="frame" x="300" y="11" width="60" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="3eO-6p-UJe"/>
+                                                        <constraint firstAttribute="height" constant="21" id="6Ab-cp-Ns9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wkv-iK-1Z2" firstAttribute="top" secondItem="dWJ-Xv-UL1" secondAttribute="topMargin" id="PGT-6n-5kL"/>
+                                                <constraint firstItem="Qi1-40-XIY" firstAttribute="leading" secondItem="Wkv-iK-1Z2" secondAttribute="trailing" constant="8" id="Xdp-fs-2Hf"/>
+                                                <constraint firstItem="Qi1-40-XIY" firstAttribute="trailing" secondItem="dWJ-Xv-UL1" secondAttribute="trailingMargin" id="cc0-lu-Pzn"/>
+                                                <constraint firstItem="ezw-vk-2SD" firstAttribute="leading" secondItem="dWJ-Xv-UL1" secondAttribute="leadingMargin" id="dpA-sk-Psm"/>
+                                                <constraint firstItem="Qi1-40-XIY" firstAttribute="top" secondItem="dWJ-Xv-UL1" secondAttribute="topMargin" id="hNt-9y-UGp"/>
+                                                <constraint firstItem="ezw-vk-2SD" firstAttribute="top" secondItem="Wkv-iK-1Z2" secondAttribute="bottom" constant="3" id="kUF-ay-2gz"/>
+                                                <constraint firstItem="Wkv-iK-1Z2" firstAttribute="leading" secondItem="dWJ-Xv-UL1" secondAttribute="leadingMargin" id="ylX-ld-3RE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ezw-vk-2SD" secondAttribute="trailing" id="ysM-iA-ACg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailLabel" destination="ezw-vk-2SD" id="dDw-V2-BIt"/>
+                                            <outlet property="lineLabel" destination="Wkv-iK-1Z2" id="aOH-c7-dqh"/>
+                                            <outlet property="scoreLabel" destination="Qi1-40-XIY" id="wZL-NM-EIA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bXC-mE-2bg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8Yl-RI-uNS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4b-ge-2Ba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Mg-hN-hyV"/>
+                            <constraint firstItem="w4b-ge-2Ba" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HHE-4I-cog"/>
+                            <constraint firstItem="w4b-ge-2Ba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ayN-lb-fLy"/>
+                            <constraint firstItem="w4b-ge-2Ba" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dEq-4c-o5a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pick Up Lines" id="McG-Qa-eEH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vE4-KF-fhx">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onAddTapped" destination="BYZ-38-t0r" id="ruf-4T-5qu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="w4b-ge-2Ba" id="TgL-UG-1fl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S5i-Hm-9Dp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KW3-mA-B4j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="cmG-KB-dDM">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18139487504959106" green="0.11411973088979721" blue="0.23431238532066345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kNB-D5-O25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghC-Dw-hUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="118"/>
+        </scene>
+    </scenes>
+</document>
